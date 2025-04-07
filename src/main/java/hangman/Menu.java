@@ -1,28 +1,35 @@
-package visilica.vicilica;
+package hangman;
 
 import java.util.Scanner;
 
-public class VisilicaApplication {
+public class Menu {
 
-    public static void main(String[] args) {
-
+    public static boolean menu() {
         System.out.println("Вас приветствует игра 'Висилица', суть игры отгадать слово c 7 попыток");
+
         while (true) {
             System.out.println("       Начать новую игру-нажмите 1");
             System.out.println("       Выход-нажмите 2");
             Scanner scanner = new Scanner(System.in);
-            int a = scanner.nextInt();
+            int input = 0;
 
-            if (a == 1) {
-                System.out.println("Игра началась");
-                Game game = new Game();
-                game.startGameLoop();
+            try {
+                input = scanner.nextInt();
+            } catch (Exception e) {
+                System.out.println("Введите цифру");
             }
-            if (a == 2) {
+
+            if (input == 1) {
+                System.out.println("Игра началась");
+                return true;
+            }
+
+            if (input == 2) {
                 System.out.println("Вы вышли");
-                break;
+                return false;
+            } else {
+                System.out.println("Неверный ввод!");
             }
         }
     }
 }
-

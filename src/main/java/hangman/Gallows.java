@@ -1,4 +1,4 @@
-package visilica.vicilica;
+package hangman;
 
 public class Gallows {
 
@@ -68,7 +68,6 @@ public class Gallows {
             System.out.println("|");
         }
         if (numberErrors==7){
-            System.out.println("ВЫ ПРОИГРАЛИ=)");
             System.out.println("|----");
             System.out.println("|   |");
             System.out.println("|   O");

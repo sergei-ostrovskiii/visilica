@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>visilica</groupId>
-    <artifactId>vicilica</artifactId>
+    <artifactId>Hangman</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>visilica</name>
-    <description>visilica</description>
+    <name>hangman</name>
+    <description>hangman</description>
     <url/>
     <licenses>
         <license/>
