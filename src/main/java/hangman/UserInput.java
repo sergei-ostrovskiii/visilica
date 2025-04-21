@@ -3,10 +3,19 @@ package hangman;
 import java.util.Scanner;
 
 public class UserInput {
+
     private Scanner scanner = new Scanner(System.in);
 
     public char userInput() {
-        String input = scanner.nextLine();
-        return input.charAt(0);
+        while (true) {
+            String input = scanner.nextLine().toLowerCase();
+
+            if (input.isEmpty()) {
+                System.out.println("Вы ввели пустую строку");
+
+            } else {
+                return input.charAt(0);
+            }
+        }
     }
 }
